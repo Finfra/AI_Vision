@@ -11,7 +11,12 @@ epochs = 200
 
 import pandas as pd
 import os
-iris=pd.read_csv("iris.csv")
+from os import getcwd
+from os.path import join
+
+print(getcwd())
+print('------------------------')
+iris=pd.read_csv("../../data/iris.csv")
 #help(irist.drop)
 iris.drop(['no'],1,inplace=True)
 iris
